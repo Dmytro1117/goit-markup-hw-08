@@ -22,7 +22,7 @@
 .hero {
     background-color: $hero-color;
     text-align: center;
-    // width: 480px;
+    width: 480px;
     min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -31,21 +31,72 @@
     background-image:
     linear-gradient($gradient-color,
     $gradient-color),
-    url(/img/hero.jpg);
+    url(/img/Header\ img-480.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .hero {
+                background-image:
+                    linear-gradient($gradient-color,
+                        $gradient-color),
+                    url(/img/Header\ img@-4802x.jpg);
+            }
+        }
+
 
         @media screen and (min-width:768px) {
-            // width: 768px;
+            width: 768px;
             // min-height: 400px;
+            background-image:
+                    linear-gradient($gradient-color,
+                        $gradient-color),
+                    url(/img/Header\ img-768.jpg);
+                   
         }
+                                @media screen and (min-device-pixel-ratio: 2),
+                                screen and (-webkit-min-device-pixel-ratio: 2),
+                                screen and (min-resolution: 192dpi),
+                                screen and (min-resolution: 2dppx) {
+                    .hero {
+                        background-image:
+                            linear-gradient($gradient-color,
+                                $gradient-color),
+                            url(/img/Header\ img-768@2x.jpg);
+                            background-size: contain;
+                        }
+                    }
 
         @media screen and (min-width:1200px) {
-            max-width: 1600px;
-            width: 100%;
-            min-height: 600px;
+            // max-width: 1600px;
+            width: 1600px;
+            // width: 100%;
+            height: 600px;
             padding-top: 200px;
             padding-bottom: 200px;
+            background-image:
+                    linear-gradient($gradient-color,
+                        $gradient-color),
+                    url(/img/Img-1200.jpg);
         }
+
+                  @media screen and (min-device-pixel-ratio: 2),
+                                screen and (-webkit-min-device-pixel-ratio: 2),
+                           screen and (min-resolution: 192dpi),
+                                screen and (min-resolution: 2dppx) {
+                    .hero {
+                      background-image:
+                          linear-gradient($gradient-color,
+                              $gradient-color),
+                          url(/img/Img-1200@2x.jpg);
+                        background-size: cover;
+                    }
+                  }
+            
 }
+
+
 
 .button.button--primary {
     color: $background-color-h1;

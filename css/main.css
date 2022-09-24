@@ -726,20 +726,44 @@ input:focus-within ~ .modal__email {
 .hero {
   background-color: #2F303A;
   text-align: center;
+  width: 480px;
   min-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Header\ img-480.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Header\ img@-4802x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Header\ img-768.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Header\ img-768@2x.jpg);
+    background-size: contain;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    width: 100%;
-    min-height: 600px;
+    width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Img-1200.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Img-1200@2x.jpg);
+    background-size: cover;
   }
 }
 
