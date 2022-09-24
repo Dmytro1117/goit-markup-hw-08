@@ -1,0 +1,165 @@
+.menu {
+    position: relative;
+    width: 100%;
+    height: 796px;
+    transform: translate(-50%) scale(1);
+    top: 0;
+    left: 50%;
+    background-color: $background-color-h1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.burger:hover,
+.burger:focus {
+    fill: rgba(33, 150, 243, 1);
+}
+
+.menu__svg:hover,
+.menu__svg:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
+
+
+.menu__svg {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    right: 20px;
+    top: 20px;
+    transition: color 250ms $animation;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: $background-color-h1;
+    cursor: pointer;
+}
+
+
+
+.backdropp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 250ms $animation;
+    background-color: antiquewhite;
+}
+
+
+.backdropp.is-open .menu {
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+.backdropp.is-open {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.menu__exit {
+    fill: currentColor;
+    width: 40px;
+    height: 40px;
+}
+
+.menu__content {
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.menu__adress {
+    display: flex;
+    flex-direction: column;
+    height: 208px;
+    justify-content: space-between;
+}
+
+.menu__name.current {
+    color: rgba(33, 150, 243, 1);
+}
+
+
+.menu__name {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+
+
+
+
+.menu__network { 
+    display: flex;
+    margin-top: 64px;
+}
+
+.menu__network--linkedin,
+.menu__network--face,
+.menu__network--twit,
+.menu__network--insta {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.menu__network--twit,
+.menu__network--face,
+.menu__network--linkedin {
+    border-left: rgba(33, 33, 33, 0.2) solid 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu__network--insta {
+    padding-left: 10px;
+ padding-right: 10px;
+}
+
+
+
+
+
+.menu__contact {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 306px;
+
+}
+
+.menu__items--tel {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+}
+
+.menu__items--mail {
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #757575;
+}
+

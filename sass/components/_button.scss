@@ -1,0 +1,42 @@
+.button {
+    color: $title-text-color;
+    height: 38px;
+    min-width: 67px;
+    padding: 6px 22px;
+    font-family: inherit;
+    background-color: $background-color;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    transition: color 250ms $animation,
+        background-color 250ms $animation,
+        filter 250ms $animation;
+}
+
+
+.letter__button:hover,
+.letter__button:focus,
+.form-but:hover,
+.form-but:focus,
+.button:hover,
+.button:focus {
+    color: $background-color-h1;
+    background-color: $accent-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button--active {
+    color: $background-color-h1;
+    background-color: $accent-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.letter__button:active,
+.button:active {
+    box-shadow: inset 3px 3px 3px 3px hsla(0, 0%, 0%, .3);
+}

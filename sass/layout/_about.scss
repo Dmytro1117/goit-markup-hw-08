@@ -1,0 +1,46 @@
+.about {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display:block;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+}
+
+
+.about__ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.position-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about__text {
+    position: absolute;
+    color: $border-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    opacity: 0.8;
+    background-color: #2F303A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__item {
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+

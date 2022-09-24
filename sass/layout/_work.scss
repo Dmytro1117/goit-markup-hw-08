@@ -1,0 +1,157 @@
+
+
+
+.work__div {
+    background-color: $background-color;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    
+@media screen and (min-width: 768px) {
+    width: 354px;
+    margin-top: 0;
+    }
+
+@media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+   
+}
+}
+
+
+.work__svg {
+    fill: currentColor;
+    width: 70px;
+    height: 70px;
+    margin: 25px 190px;
+
+    @media screen and (min-width: 768px) {
+            
+                margin: 25px 142px;
+        }
+
+    @media screen and (min-width: 1200px) {
+      
+        margin: 25px 100px;
+    
+}
+
+}
+
+
+.work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+@media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+@media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+    height: 342px;
+}
+
+}
+
+
+.work__items:nth-child(4n) {
+    margin-right: 0;
+
+@media screen and (min-width: 768px) {
+        margin-right: auto;
+
+    }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 0;
+    
+        }
+}
+
+
+
+
+
+.work__ul {
+    display: block;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+
+}
+
+}
+
+.work__items {
+    width: 450px;
+    margin-top: 30px;
+    
+    
+
+    @media screen and (min-width: 768px) {
+        width: 354px; 
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+        }
+    @media screen and (min-width: 1200px) { 
+        width: 270px;
+        margin-right: 30px;
+         margin-left: 0;
+         margin-top: 0;
+         margin-bottom: 0;
+    }
+}
+
+.work__items:first-child {
+    margin-top: 0;
+
+    @media screen and (min-width: 768px) {
+        margin-top: auto;
+    
+        }
+
+         @media screen and (min-width: 1200px) {
+             margin-top: 0;
+    
+         }
+    
+}
+
+.work__virtues {
+    color: $title-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
+@media screen and (min-width: 768px) {
+        color: $title-text-color;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+.work__text {
+    line-height: 1.7;
+    margin-top: 0px;
+    margin-bottom: 0;
+}

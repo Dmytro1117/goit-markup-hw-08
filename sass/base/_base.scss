@@ -1,0 +1,52 @@
+body {
+    color: $primary-text-color;
+    background-color: $background-color-h1;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+pre {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    outline: none;
+}
