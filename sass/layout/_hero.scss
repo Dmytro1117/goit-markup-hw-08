@@ -31,7 +31,7 @@
     background-image:
     linear-gradient($gradient-color,
     $gradient-color),
-    url(/img/Header\ img-480.jpg);
+    url(/img/hero-mobile.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
@@ -41,7 +41,7 @@
                 background-image:
                     linear-gradient($gradient-color,
                         $gradient-color),
-                    url(/img/Header\ img@-4802x.jpg);
+                    url(/img/hero-mobile2x.jpg);
             }
         }
 
@@ -52,7 +52,7 @@
             background-image:
                     linear-gradient($gradient-color,
                         $gradient-color),
-                    url(/img/Header\ img-768.jpg);
+                    url(/img/hero-tablet.jpg);
                    
         }
                                 @media screen and (min-device-pixel-ratio: 2),
@@ -63,7 +63,7 @@
                         background-image:
                             linear-gradient($gradient-color,
                                 $gradient-color),
-                            url(/img/Header\ img-768@2x.jpg);
+                            url(/img/hero-tablet2x.jpg);
                             background-size: contain;
                         }
                     }
@@ -78,7 +78,7 @@
             background-image:
                     linear-gradient($gradient-color,
                         $gradient-color),
-                    url(/img/Img-1200.jpg);
+                    url(/img/hero-dekstop.jpg);
         }
 
                   @media screen and (min-device-pixel-ratio: 2),
@@ -89,7 +89,7 @@
                       background-image:
                           linear-gradient($gradient-color,
                               $gradient-color),
-                          url(/img/Img-1200@2x.jpg);
+                          url(/img/hero-dekstop2x.jpg);
                         background-size: cover;
                     }
                   }
