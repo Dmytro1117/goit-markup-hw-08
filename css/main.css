@@ -584,6 +584,7 @@ input:focus-within ~ .modal__email {
 @media screen and (min-width: 1200px) {
   .header {
     max-width: 1600px;
+    width: 100%;
   }
 }
 
