@@ -1,11 +1,12 @@
 
-
-
 .work__div {
     background-color: $background-color;
-    width: 450px;
+    width: 100%;
     height: 120px;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 @media screen and (min-width: 768px) {
     width: 354px;
@@ -22,9 +23,9 @@
 
 .work__svg {
     fill: currentColor;
-    width: 70px;
-    height: 70px;
-    margin: 25px 190px;
+    // width: 70px;
+    // height: 70px;
+    // margin: 25px 190px;
 
     @media screen and (min-width: 768px) {
             
@@ -95,7 +96,7 @@
 }
 
 .work__items {
-    width: 450px;
+   width: auto;
     margin-top: 30px;
     
     

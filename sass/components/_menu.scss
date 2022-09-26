@@ -107,19 +107,33 @@
 .menu__network { 
     display: flex;
     margin-top: 64px;
+    
+}
+
+.sidebar,
+.content {
+  height: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0p
+    
+    
 }
 
 .menu__network--linkedin,
 .menu__network--face,
 .menu__network--twit,
 .menu__network--insta {
-    display: block;
+    display: flex;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: #2196F3;
 }
+
 
 .menu__network--twit,
 .menu__network--face,

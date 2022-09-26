@@ -22,7 +22,7 @@
 .hero {
     background-color: $hero-color;
     text-align: center;
-    width: 480px;
+    max-width: 480px;
     min-height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -50,7 +50,7 @@
 
 
         @media screen and (min-width:768px) {
-            width: 768px;
+            max-width: 768px;
             background-image:
                     linear-gradient($gradient-color,
                         $gradient-color),

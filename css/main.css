@@ -196,11 +196,20 @@ button {
   margin-top: 64px;
 }
 
+.sidebar,
+.content {
+  height: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0p;
+}
+
 .menu__network--linkedin,
 .menu__network--face,
 .menu__network--twit,
 .menu__network--insta {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -301,7 +310,8 @@ button {
 
 .modal {
   position: absolute;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 610px;
   transform: translate(-50%, -50%) scale(1);
   top: 50%;
@@ -309,6 +319,11 @@ button {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -567,7 +582,7 @@ input:focus-within ~ .modal__email {
 }
 
 .header {
-  max-width: 480px;
+  width: 100%;
   width: 100%;
   margin: 0 auto;
   border-bottom-width: 1px;
@@ -734,7 +749,7 @@ input:focus-within ~ .modal__email {
 .hero {
   background-color: #2F303A;
   text-align: center;
-  width: 480px;
+  max-width: 480px;
   min-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -751,7 +766,7 @@ input:focus-within ~ .modal__email {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.jpg);
   }
 }
@@ -793,9 +808,12 @@ input:focus-within ~ .modal__email {
 
 .work__div {
   background-color: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .work__div {
@@ -812,9 +830,6 @@ input:focus-within ~ .modal__email {
 
 .work__svg {
   fill: currentColor;
-  width: 70px;
-  height: 70px;
-  margin: 25px 190px;
 }
 @media screen and (min-width: 768px) {
   .work__svg {
@@ -878,7 +893,7 @@ input:focus-within ~ .modal__email {
 }
 
 .work__items {
-  width: 450px;
+  width: auto;
   margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -996,8 +1011,8 @@ input:focus-within ~ .modal__email {
 }
 
 .no-gap {
-  width: 450px;
-  height: 460px;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .no-gap {
@@ -1052,7 +1067,7 @@ input:focus-within ~ .modal__email {
 }
 
 .team__item {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -1100,6 +1115,7 @@ input:focus-within ~ .modal__email {
 }
 
 .team__name {
+  width: 100%;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -1110,6 +1126,7 @@ input:focus-within ~ .modal__email {
 }
 
 .team__position {
+  width: 100%;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -1154,7 +1171,7 @@ input:focus-within ~ .modal__email {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 450px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1263,7 +1280,7 @@ input:focus-within ~ .modal__email {
 }
 
 .footerr {
-  width: 480px;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
@@ -1362,7 +1379,7 @@ input:focus-within ~ .modal__email {
 }
 
 .letter {
-  width: 450px;
+  max-width: 450px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1460,7 +1477,7 @@ input:focus-within ~ .modal__email {
 
 .letter__input {
   outline: none;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1569,6 +1586,7 @@ input:focus-within ~ .modal__email {
 }
 
 .project__item {
+  width: 100%;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-bottom-width: 1px;
@@ -1583,7 +1601,6 @@ input:focus-within ~ .modal__email {
 }
 @media screen and (min-width: 768px) {
   .project__item {
-    width: 357px;
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
@@ -1622,8 +1639,6 @@ input:focus-within ~ .modal__email {
   display: inline-block;
   padding: 80px 27px;
   margin: 0;
-  width: 450px;
-  height: 294px;
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
@@ -1721,8 +1736,8 @@ input:focus-within ~ .modal__email {
 
 .no-gapp {
   display: block;
-  width: 450px;
-  height: 294px;
+  min-width: 100%;
+  min-height: 100%;
 }
 @media screen and (min-width: 768px) {
   .no-gapp {
