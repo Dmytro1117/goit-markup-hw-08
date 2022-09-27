@@ -153,7 +153,7 @@
     transition: opacity 250ms $animation,
     transform 250ms $animation;
     background-color: $animation-color;
-    overflow: scroll;
+    overflow-y:auto;
 }
 
 
