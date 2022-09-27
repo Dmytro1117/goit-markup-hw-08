@@ -194,6 +194,7 @@ button {
 .menu__network {
   display: flex;
   margin-top: 64px;
+  flex-wrap: wrap;
 }
 
 .sidebar,

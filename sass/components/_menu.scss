@@ -77,7 +77,6 @@
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
-   
 }
 
 .menu__adress {
@@ -101,14 +100,12 @@
 }
 
 
-
-
-
 .menu__network { 
     display: flex;
     margin-top: 64px;
-    
+    flex-wrap: wrap;
 }
+
 
 .sidebar,
 .content {
@@ -148,6 +145,9 @@
  padding-right: 10px;
 }
 
+// .menu__network--list {
+//     flex-wrap: wrap;
+// }
 
 
 
