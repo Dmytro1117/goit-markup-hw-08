@@ -116,7 +116,7 @@
 
 .project__about {
     display: inline-block;
-    padding: 80px 27px;
+    padding: 77px 27px;
     // max-width: 400px;
     // max-height: 140px;
     margin: 0;
@@ -125,6 +125,8 @@
     font-size: 18px;
     line-height: 1.55;
     color: $background-color-h1;
+    
+    
 
 @media screen and (min-width: 768px) {
     padding: 49px 24px;
@@ -151,6 +153,7 @@
     transition: opacity 250ms $animation,
     transform 250ms $animation;
     background-color: $animation-color;
+    overflow: scroll;
 }
 
 
