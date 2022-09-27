@@ -13,12 +13,17 @@
     }
 }
 
+.flex__inp {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
 .ul {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
     max-width: 326px;
-    height: 91px;
+    // height: 91px;
     margin-left: auto;
     margin-right: auto;
     justify-content:center;
@@ -101,8 +106,6 @@
 }
 
 
-
-
 .project__animation {
     position: relative;
     overflow: hidden;
@@ -154,6 +157,10 @@
     transform 250ms $animation;
     background-color: $animation-color;
     // overflow-y:auto;
+
+    @media screen and (min-width: 200px) and (max-width: 479px) {
+        overflow-y:auto;
+    }
 }
 
 
@@ -214,16 +221,6 @@
     letter-spacing: 0.06em;
     margin: 0;
 }
-
-.flex__inp {
-    margin-right: 8px;
-}
-
-
-
-
-
-
 
 
 .project__paragraph {
